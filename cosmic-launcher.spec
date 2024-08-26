@@ -29,7 +29,7 @@ when it is ready.
 
 %prep
 %autosetup -n %{name}-epoch-%{version}-alpha.1 -a1 -p1
-rm -f .cargo
+rm -rf .cargo
 mkdir .cargo
 cp %{SOURCE2} .cargo/config
 
