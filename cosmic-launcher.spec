@@ -3,12 +3,12 @@
 %define         appname com.system76.CosmicLauncher
 Name:           cosmic-launcher
 Version:        1.0.0
-Release:        0.alpha2.0
+Release:        0.alpha3.0
 Summary:        Layer Shell frontend
 License:        GPL-3.0-only
 Group:          Desktop/COSMIC
 URL:            https://github.com/pop-os/cosmic-launcher
-Source0:        https://github.com/pop-os/cosmic-launcher/archive/epoch-%{version}-alpha.2/%{name}-epoch-%{version}-alpha.2.tar.gz
+Source0:        https://github.com/pop-os/cosmic-launcher/archive/epoch-%{version}-alpha.3/%{name}-epoch-%{version}-alpha.3.tar.gz
 Source1:        vendor.tar.xz
 Source2:        cargo_config
 
@@ -28,7 +28,7 @@ in wayland is defined here but it will be switched to use wlr-foreign-toplevel-m
 when it is ready.
 
 %prep
-%autosetup -n %{name}-epoch-%{version}-alpha.2 -a1 -p1
+%autosetup -n %{name}-epoch-%{version}-alpha.3 -a1 -p1
 rm -rf .cargo
 mkdir .cargo
 cp %{SOURCE2} .cargo/config
