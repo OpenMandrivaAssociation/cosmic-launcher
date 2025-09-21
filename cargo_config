@@ -15,6 +15,10 @@ git = "https://github.com/pop-os/cosmic-protocols"
 rev = "178eb0b"
 replace-with = "vendored-sources"
 
+[source."git+https://github.com/pop-os/cosmic-settings-daemon"]
+git = "https://github.com/pop-os/cosmic-settings-daemon"
+replace-with = "vendored-sources"
+
 [source."git+https://github.com/pop-os/cosmic-text.git"]
 git = "https://github.com/pop-os/cosmic-text.git"
 replace-with = "vendored-sources"
