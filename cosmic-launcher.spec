@@ -3,7 +3,7 @@
 %define         appname com.system76.CosmicLauncher
 Name:           cosmic-launcher
 Version:        1.0.0
-%define beta beta.1
+%define beta beta.1.1
 Release:        %{?beta:0.%{beta}.}1
 Summary:        Layer Shell frontend
 License:        GPL-3.0-only
