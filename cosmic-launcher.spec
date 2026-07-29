@@ -2,7 +2,7 @@
 
 %define         appname com.system76.CosmicLauncher
 Name:           cosmic-launcher
-Version:        1.4.0
+Version:        1.5.0
 #define beta beta.7
 Release:        %{?beta:0.%{beta}.}1
 Summary:        Layer Shell frontend
