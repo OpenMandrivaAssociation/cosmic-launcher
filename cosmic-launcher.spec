@@ -12,6 +12,7 @@ URL:            https://github.com/pop-os/cosmic-launcher
 Source0:        https://github.com/pop-os/cosmic-launcher/archive/epoch-%{version}%{?beta:-%{beta}}/%{name}-epoch-%{version}%{?beta:-%{beta}}.tar.gz
 Source1:        vendor.tar.xz
 Source2:        cargo_config
+Patch1:         fix-justfile.patch
 
 BuildRequires:  make
 BuildRequires:  rust-packaging
