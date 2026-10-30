@@ -37,6 +37,12 @@ mkdir .cargo
 cp %{SOURCE2} .cargo/config
 
 %build
+# From Fedora
+# The zbus-lockstep #[validate] macro resolves the AT-SPI XML directory to            
+# "vendor/xml" (the vendored xml crate) instead of atspi-common's own            
+# "xml" directory, which makes it panic on files without an extension.            
+# Explicitly point it at the right directory.            
+export LOCKSTEP_XML_PATH="$PWD/vendor/atspi-common/xml"
 just build-release
 
 %install
